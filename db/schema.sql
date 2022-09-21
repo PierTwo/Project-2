@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS project_2_db;
+DROP DATABASE IF EXISTS  chiefdom_db;
 
-CREATE DATABASE project_2_db;
+CREATE DATABASE chiefdom_db;
