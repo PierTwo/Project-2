@@ -6,17 +6,17 @@
     background-color: red;
     height: 400px;
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 100px;
     color: yellow;
     text-align: center;
     font-size: 48px;
+    border-radius: 30px;
 }
 
 #Logo {
-    background-color: red;
     height: 350px;
     margin-left: 100px;
-    margin-top: 50px;
+    margin-top: 200px;
     color: yellow;
     text-align: center;
     font-size: 48px;
@@ -30,16 +30,18 @@
     margin-left: 100px;
     text-align: center;
     font-size: 48px;
+    border-radius: 30px;
 }
 
 #Post-Button {
     background-color: red;
     color: yellow;
     height: 200px;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 100px;
     text-align: center;
     font-size: 48px;
+    border-radius: 30px;
 }
 
 #Tweet-one {
@@ -54,4 +56,13 @@
 
 .top-bar {
     color: red;
+}
+
+img {
+    height: 350px;
+}
+
+#field {
+    padding-top: 100px;
+    padding-left: 150px;
 }
