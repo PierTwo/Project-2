@@ -26,7 +26,7 @@
     background-color: red;
     color: yellow;
     height: 75px;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-left: 100px;
     text-align: center;
     font-size: 48px;
@@ -42,16 +42,16 @@
     font-size: 48px;
 }
 
-#Tweet-one, #Tweet-Two, #Tweet-Three, #Tweet-Four, #Tweet-Five {
-    background-color: red;
-    color: yellow;
-    height: 125px;
+#Tweet-one {
+    height: 800px;
+    width: 1200px;
     margin-top: 50px;
     margin-left: 100px;
     text-align: center;
     font-size: 48px;
+    margin-bottom: 25px;
 }
 
-#Tweet-Five {
-    margin-bottom: 25px;
+.top-bar {
+    color: red;
 }
