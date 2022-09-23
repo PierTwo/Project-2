@@ -1,0 +1,57 @@
+.body {
+    background-color: gold;
+}
+
+#Description {
+    background-color: red;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: yellow;
+    text-align: center;
+    font-size: 48px;
+}
+
+#Logo {
+    background-color: red;
+    height: 350px;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: yellow;
+    text-align: center;
+    font-size: 48px;
+}
+
+#Tweet-Head {
+    background-color: red;
+    color: yellow;
+    height: 75px;
+    margin-top: 200px;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 48px;
+}
+
+#Post-Button {
+    background-color: red;
+    color: yellow;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 48px;
+}
+
+#Tweet-one {
+    height: 800px;
+    width: 1200px;
+    margin-top: 50px;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 25px;
+}
+
+.top-bar {
+    color: red;
+}
