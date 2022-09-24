@@ -3,18 +3,21 @@
     "title": "Chiefs vs Bucs",
     "body": "I can't wait to watch this game. Tom Brady is going to learn a thing or two...",
     "likes": 12,
+    "category_id": 5,
     "user_id": 1
   },
   {
     "title": "Mahomes without Hill",
     "body": "Looks like Mahomes didn't need Tyreek Hill after all...",
     "likes": 16,
+    "category_id": 1,
     "user_id": 3
   },
   {
     "title": "I think we will win the superbowl",
     "body": "I think the Chiefs can do it this year, what do you think?",
     "likes": 20,
+    "category_id": 4,
     "user_id": 2
   }
 ]

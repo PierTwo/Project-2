@@ -1,8 +1,10 @@
 const sequelize = require('../config/connection');
-const { User, Thread } = require('../models');
+const { User, Category, Thread, Comment } = require('../models');
 
 const userData = require('./userData.json');
+const categoryData = require('./categoryData.json');
 const threadData = require('./threadData.json');
+const commentData = require('./commentData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -12,14 +14,28 @@ const seedDatabase = async () => {
     returning: true,
   });
 
+  const categories = await Category.bulkCreate(categoryData, {
+    individualHooks: true,
+    returning: true,
+  });
+
   const threads = await Thread.bulkCreate(threadData, {
     individualHooks: true,
     returning: true,
   });
 
-  console.info('Users Seeded:', users);
+  const comments = await Comment.bulkCreate(commentData, {
+    individualHooks: true,
+    returning: true,
+  });
 
-  console.info('Threads Seeded:', threads);
+  console.info('Users Seeded: ', users);
+
+  console.info('Categories Seeded: ', categories);
+
+  console.info('Threads Seeded: ', threads);
+
+  console.info('Comments Seeded: ', comments);
 
   process.exit(0);
 };

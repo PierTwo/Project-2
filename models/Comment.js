@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Thread extends Model {}
+class Comment extends Model {}
 
-Thread.init(
+Comment.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,28 +11,21 @@ Thread.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    comment: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    body: {
-      type: DataTypes.STRING,
-    },
-    likes: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
-    category_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: 'category',
-        key: 'id',
-      },
     },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
+        key: 'id',
+      },
+    },
+    thread_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'thread',
         key: 'id',
       },
     },
@@ -42,8 +35,8 @@ Thread.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'thread',
+    modelName: 'comment',
   }
 );
 
-module.exports = Thread;
+module.exports = Comment;

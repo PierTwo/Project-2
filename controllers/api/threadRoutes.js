@@ -1,10 +1,19 @@
 const router = require('express').Router();
-const { User, Thread } = require('../../models');
+const { User, Category, Thread, Comment } = require('../../models');
 
 router.get('/', async (req, res) => {
   try {
     const threadData = await Thread.findAll({
-      include: [{ model: User, attributes: ['username'] }],
+      attributes: ['title', 'body', 'likes'],
+      include: [
+        { model: User, attributes: ['username'] },
+        { model: Category, attributes: ['category'] },
+        {
+          model: Comment,
+          attributes: ['comment'],
+          include: [{ model: User, attributes: ['username'] }],
+        },
+      ],
     });
 
     res.status(200).json(threadData);
