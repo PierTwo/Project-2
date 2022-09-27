@@ -9,20 +9,22 @@
   </title>
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
-  <link rel = "icon" href = "https://i1.wp.com/www.baltimorefeather.com/wp-content/uploads/2018/12/Chiefs-Logo.png?fit=2400%2C2400"
-  type = "image/x-icon/">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css"
+    crossorigin="anonymous">
+  <link rel="icon"
+    href="https://i1.wp.com/www.baltimorefeather.com/wp-content/uploads/2018/12/Chiefs-Logo.png?fit=2400%2C2400"
+    type="image/x-icon/">
   <link rel="preload" href="NFLChiefs.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
-<header id="login-header-container">
+<header class="stadium" id="login-header-container">
   <div class="flex-container align-spaced">
     <div class="flex-shrink">
       <img src="\assets\img\kansas_city_chiefs_logo.png" alt="chiefs-logo"></img>
-    </div> 
+    </div>
     <div class="align-self-middle" id="header-text-container">
-      <h6 class="text-center flex-child-grow" id="login-header">THE</h6> 
-      <h6 class="text-center flex-child-grow" id="login-header">CHIEFDOM</h6> 
+      <h6 class="text-center flex-child-grow" id="login-header">THE</h6>
+      <h6 class="text-center flex-child-grow" id="login-header">CHIEFDOM</h6>
     </div>
     <div>
       <img src="\assets\img\kansas_city_chiefs_logo.png" alt="chiefs-logo"></img>
@@ -31,48 +33,47 @@
 </header>
 
 <body class="body">
-<div class="top-bar" id="nav-bar">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu id="inner-nav-bar">
-       <li class="menu-text" id="nav-bar-title">The Chiefdom</li>
-       <li><a href="/" id="nav-bar-text">Home</a></li>
-       <li class="has-submenu">
-        <a href="#" id="nav-bar-text">Categories</a>
-        <ul class="submenu menu vertical" data-submenu>
-          <li><a href="/predictions" id="nav-bar-text">Predictions</a></li>
-          <li><a href="/offense" id="nav-bar-text">Offense</a></li>
-          <li><a href="/defense" id="nav-bar-text">Defense</a></li>
-          <li><a href="/highlights" id="nav-bar-text">Best Plays</a></li>
-          <li><a href="/random" id="nav-bar-text">Off The Field</a></li>
+  <div class="top-bar" id="nav-bar">
+    <div class="top-bar-left">
+      <ul class="dropdown menu" data-dropdown-menu id="inner-nav-bar">
+        <li><a href="/" id="chief">The Chiefdom</a></li>
+        <li class="has-submenu">
+          <a href="#" id="nav-bar-text">Categories</a>
+          <ul class="submenu menu vertical" data-submenu>
+            <li><a href="/predictions" id="nav-bar-text">Predictions</a></li>
+            <li><a href="/offense" id="nav-bar-text">Offense</a></li>
+            <li><a href="/defense" id="nav-bar-text">Defense</a></li>
+            <li><a href="/highlights" id="nav-bar-text">Best Plays</a></li>
+            <li><a href="/random" id="nav-bar-text">Off The Field</a></li>
+          </ul>
+        </li>
+        <li><a href="#" id="nav-bar-text">Schedule</a></li>
+        <li><a href="#" id="nav-bar-text">Profile</a></li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><input type="search" placeholder="Search"></li>
+        <li><button type="button" class="button" id="nav-bar-btn">Search</button></li>
+      </ul>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><a href="#">Logout</a></li>
+          <li><a class="button">Login</a></li>
         </ul>
-      </li>
-      <li><a href="#" id="nav-bar-text">Schedule</a></li>
-      <li><a href="#" id="nav-bar-text">Profile</a></li>
-      <li><a href="#" id="nav-bar-text">Log Out</a></li>
-    </ul>
+      </div>
+    </div>
   </div>
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li><input type="search" placeholder="Search"></li>
-      <li><button type="button" class="button" id="nav-bar-btn">Search</button></li>
-    </ul>
-  </div>
-</div>
 
-{{{ body }}}
+  {{{ body }}}
 
-    <script
-      src='https://code.jquery.com/jquery-3.6.1.min.js'
-      integrity='sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ='
-      crossorigin='anonymous'
-    ></script>
-    <script
-      src='https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js'
-      crossorigin='anonymous'
-    ></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
+  <script src='https://code.jquery.com/jquery-3.6.1.min.js'
+    integrity='sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=' crossorigin='anonymous'></script>
+  <script src='https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js'
+    crossorigin='anonymous'></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
 
 </html>
