@@ -24,10 +24,10 @@
     "foundation-sites": "^6.7.5",
     "morgan": "^1.10.0",
     "mysql2": "^2.2.5",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.23.1"
   },
   "devDependencies": {
-    "eslint": "^7.12.1",
+    "eslint": "^8.24.0",
     "eslint-config-prettier": "^6.15.0",
     "jest": "^29.0.3",
     "nodemon": "^2.0.20",
