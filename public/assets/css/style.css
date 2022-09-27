@@ -139,6 +139,13 @@ img {
   background-color: black;
 }
 
+.nav-bar-title {
+  font-family: 'NFL Chiefs';
+  color: black;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px gold, 0 0 30px gold,
+    0 0 40px gold, 0 0 55px gold, 0 0 70px gold;
+}
+
 #legend-pic-one {
   height: 600px;
   width: 500px;
