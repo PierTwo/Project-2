@@ -166,3 +166,17 @@ img {
     font-size: 48px;
     margin-bottom: 25px;
 }
+
+.schedule {
+    background-size: cover;
+    background-position: center;
+    margin-left: 30rem;
+    height: 75rem;
+    width: 50rem;
+    margin-top: 4rem;
+    background-image: url("./chiefsplay.jpg");
+}
+
+footer {
+    background-color: black;
+}
