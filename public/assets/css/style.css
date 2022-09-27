@@ -166,3 +166,12 @@ img {
     font-size: 48px;
     margin-bottom: 25px;
 }
+
+#login, #logout {
+    color: black;
+    background-color: red;
+    border-color: black;
+}
+ #logout {
+    padding-left: 4px;
+ }
