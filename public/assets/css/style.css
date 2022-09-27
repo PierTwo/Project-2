@@ -173,3 +173,54 @@ img {
     font-size: 48px;
     margin-bottom: 25px;
 }
+
+#profile-info {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#profile-img {
+  height: 300px;
+  width: 300px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.flex-container {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.flex-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  border: 2px solid red;
+}  
+
+#post-body-box {
+  height: 50px;
+  width: 100px;
+}
