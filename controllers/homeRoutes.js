@@ -66,4 +66,13 @@ router.get('/random', async (_req, res) => {
   }
 });
 
+router.get('/schedule', async (_req, res) => {
+  try {
+    // Change this to where you app should go
+    res.render('schedule');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
