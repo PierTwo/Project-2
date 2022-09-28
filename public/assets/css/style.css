@@ -175,6 +175,42 @@ img {
     margin-bottom: 25px;
 }
 
+
+#profile-info {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#profile-img {
+  height: 300px;
+  width: 300px;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.flex-container {
+  padding: 20px;
+  
 .schedule {
     background-size: cover;
     background-position: center;
