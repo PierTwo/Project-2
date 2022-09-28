@@ -161,6 +161,13 @@ img {
     background-color: black;
 }
 
+.nav-bar-title {
+  font-family: 'NFL Chiefs';
+  color: black;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px gold, 0 0 30px gold,
+    0 0 40px gold, 0 0 55px gold, 0 0 70px gold;
+}
+
 #legend-pic-one {
     height: 600px;
     width: 500px;
@@ -171,35 +178,64 @@ img {
     margin-bottom: 25px;
 }
 
-.schedule {
-    background-size: cover;
-    background-position: center;
-    margin-left: 30rem;
-    height: 75rem;
-    width: 50rem;
-    margin-top: 4rem;
-    background-image: url("./chiefsplay.jpg");
+#profile-info {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-footer {
-    background-color: black;
+#profile-img {
+  height: 300px;
+  width: 300px;
 }
 
-#login,
-#logout {
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.flex-container {
+  border: 3px solid #fff;
+  padding: 20px;
+}
+
+.flex-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  border: 2px solid red;
+}  
+
+#post-body-box {
+  height: 50px;
+  width: 100px;
+}
+
+#login, #logout {
     color: black;
     background-color: red;
     border-color: black;
 }
-
-#logout {
+ #logout {
     padding-left: 4px;
-}
+ }
 
-#user {
-    color: red;
-}
-
-#comments {
-    color: red;
-}
+   
