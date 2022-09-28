@@ -167,7 +167,6 @@ img {
     margin-bottom: 25px;
 }
 
-<<<<<<< HEAD
 .schedule {
     background-size: cover;
     background-position: center;
@@ -181,13 +180,14 @@ img {
 footer {
     background-color: black;
 }
-=======
-#login, #logout {
+
+#login,
+#logout {
     color: black;
     background-color: red;
     border-color: black;
 }
- #logout {
+
+#logout {
     padding-left: 4px;
- }
->>>>>>> 2d70c4c5a0d24917889cecd72c54dea349b3d126
+}
