@@ -24,7 +24,7 @@ router.get('/login', (req, res) => {
 router.get('/predictions', async (_req, res) => {
   try {
     // Change this to where you app should go
-    res.render('predictions');
+    res.render('predictions', { logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -33,7 +33,7 @@ router.get('/predictions', async (_req, res) => {
 router.get('/offense', async (_req, res) => {
   try {
     // Change this to where you app should go
-    res.render('offense');
+    res.render('offense', { logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -42,7 +42,7 @@ router.get('/offense', async (_req, res) => {
 router.get('/defense', async (_req, res) => {
   try {
     // Change this to where you app should go
-    res.render('defense');
+    res.render('defense', { logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -51,7 +51,7 @@ router.get('/defense', async (_req, res) => {
 router.get('/highlights', async (_req, res) => {
   try {
     // Change this to where you app should go
-    res.render('highlights');
+    res.render('highlights', { logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -60,7 +60,7 @@ router.get('/highlights', async (_req, res) => {
 router.get('/random', async (_req, res) => {
   try {
     // Change this to where you app should go
-    res.render('random');
+    res.render('random', { logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
