@@ -191,3 +191,11 @@ footer {
 #logout {
     padding-left: 4px;
 }
+
+#user {
+    color: red;
+}
+
+#comments {
+    color: red;
+}
