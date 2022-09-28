@@ -224,3 +224,13 @@ img {
   height: 50px;
   width: 100px;
 }
+
+#login, #logout {
+    color: black;
+    background-color: red;
+    border-color: black;
+}
+ #logout {
+    padding-left: 4px;
+ }
+
