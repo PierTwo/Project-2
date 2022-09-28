@@ -85,9 +85,13 @@ img {
     margin-bottom: 25px;
 }
 
-#submit-button {
-    background-color: red;
-    color: black;
+#submit {
+    background-color: black;
+
+}
+
+#submit:hover {
+    color: red;
 }
 
 @font-face {
