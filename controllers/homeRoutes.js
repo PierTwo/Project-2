@@ -5,7 +5,7 @@ const router = require('express').Router();
 router.get('/', async (_req, res) => {
   try {
     // Change this to where you app should go
-    res.render('homepage');
+    res.render('homepage', { logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
