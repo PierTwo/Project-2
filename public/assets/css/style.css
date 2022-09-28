@@ -191,9 +191,15 @@ footer {
 
 #login,
 #logout {
-    color: black;
-    background-color: red;
+    /* color: black; */
+    background-color: black;
     border-color: black;
+}
+
+#login:hover,
+#logout:hover {
+    color: red;
+
 }
 
 #logout {
@@ -205,5 +211,9 @@ footer {
 }
 
 #comments {
+    color: red;
+}
+
+#stats {
     color: red;
 }
