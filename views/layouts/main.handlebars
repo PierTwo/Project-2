@@ -58,8 +58,11 @@
       </ul>
       <div class="top-bar-right">
         <ul class="menu">
-          <li><a class="button" id="login" href="/login">Login</a></li>
+          {{#if logged_in}}
           <li><a class="button" id="logout" href="/login">Logout</a></li>
+          {{else}}
+          <li><a class="button" id="login" href="/login">Login</a></li>
+          {{/if}}
         </ul>
       </div>
     </div>
