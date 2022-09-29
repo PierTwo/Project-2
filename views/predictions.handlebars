@@ -37,26 +37,20 @@
   </tbody>
 </table>
 
-<div class="callout small ">
-        <div class="row column">
-            <h2 id="fill">Posts</h2>
-        </div>
-</div>
-
 {{#each threads as |thread|}}
-    <div class="row" id="content">
-        <div class="blog-post">
-            <h3 id="fill">{{thread.title}} <small>{{date}}</small></h3>
+        <div class="row" id="content">
+            <div class="blog-post">
+                <h3 id="fill">{{thread.title}} <small>{{date}}</small></h3>
                 <p>{{thread.body}}</p>
-            <div class="callout">
-                <ul class="menu simple">
-                    <li><a id="user" href="#">Author: {{user.username}}</a></li>
-                    <li><a id="comments" href="#">Comments:</a></li>
-                </ul>
+                <div class="callout">
+                    <ul class="menu simple">
+                        <li><a id="user" href="#">Author: {{user.username}}</a></li>
+                        <li><a id="comments" href="#">Comments:</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-{{/each}}
+            {{/each}}
 
 {{! <div class="tabs-content" data-tabs-content="example-tabs">
         <div class="tabs-panel is-active" id="panel1">
