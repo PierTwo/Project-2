@@ -24,13 +24,18 @@
         <tr>
             <td id='stats'>AFC</td>
             <td>The Kansas City Chiefs' odds to win the 2023 AFC Championship are
-                +350.</td>
+                <span class="material-symbols-outlined">
+                    add
+                </span>350.
+            </td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td id='stats'>SUPERBOWL</td>
-            <td>The Kansas City Chiefs' odds to win the 2023 Super Bowl are +750.</td>
+            <td>The Kansas City Chiefs' odds to win the 2023 Super Bowl are <span class="material-symbols-outlined">
+                    add
+                </span>750.</td>
             <td></td>
             <td></td>
         </tr>
@@ -52,33 +57,33 @@
                     <li><a id="user" href="#">Author: {{user.username}}</a></li>
                     <li><a id="comments" href="#">Comments:</a></li>
                 </ul>
-           
-                 <textarea placeholder="my comments"></textarea>
-            <button id="submit" class="button">Submit</button>
-        </div>
-            </div>
-        </div>
-    </div>
-    {{/each}}
 
-    {{! <div class="tabs-content" data-tabs-content="example-tabs">
-        <div class="tabs-panel is-active" id="panel1">
-            <div class="media-object stack-for-small">
-                <div class="media-object-section">
-                </div>
-                <div class="media-object-section">
-                    <!-- insert user profile link -->
-                    <h4 id="fill"><a id="user" href="#">Mike Mikers</a></h4>
-                    <p>I'm going to improvise. Listen, there's something you should know about me... about
-                        inception. An idea is
-                        like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It
-                        can
-                        grow to define
-                        or destroy you.</p>
-                </div>
+                <textarea placeholder="my comments"></textarea>
+                <button id="submit" class="button">Submit</button>
             </div>
         </div>
-        <textarea placeholder="my comments"></textarea>
-        <button id="submit" class="button">Submit</button>
     </div>
+</div>
+{{/each}}
+
+{{! <div class="tabs-content" data-tabs-content="example-tabs">
+    <div class="tabs-panel is-active" id="panel1">
+        <div class="media-object stack-for-small">
+            <div class="media-object-section">
+            </div>
+            <div class="media-object-section">
+                <!-- insert user profile link -->
+                <h4 id="fill"><a id="user" href="#">Mike Mikers</a></h4>
+                <p>I'm going to improvise. Listen, there's something you should know about me... about
+                    inception. An idea is
+                    like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It
+                    can
+                    grow to define
+                    or destroy you.</p>
+            </div>
+        </div>
+    </div>
+    <textarea placeholder="my comments"></textarea>
+    <button id="submit" class="button">Submit</button>
+</div>
 </div> }}
