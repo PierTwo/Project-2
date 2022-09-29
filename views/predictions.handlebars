@@ -42,7 +42,7 @@
     </tbody>
 </table>
 
-<div class="callout small ">
+<div class="callout small">
     <div class="row column">
         <h2 id="fill" class="post-header">Posts</h2>
     </div>
@@ -52,7 +52,7 @@
     <div class="row" id="content">
         <div class="blog-post">
             <h3 id="fill">{{thread.title}} <small>{{date}}</small></h3>
-            <p>{{thread.body}}</p>
+            <p id="thread-body">{{thread.body}}</p>
                 <ul class="menu simple">
                     <li><a id="user" href="#">Author: {{user.username}}</a></li>
                     <li><a id="comments" href="#">Comments:</a></li>
@@ -61,7 +61,7 @@
         <div class="row" id="thread-content">
             <div class="blog-post">
                 <h3 id="fill">{{thread.title}} <small>{{date}}</small></h3>
-                <p id="thread-body">{{thread.body}}</p>
+                <p class="thread-body">{{thread.body}}</p>
                 <div class="callout">
                     <ul class="menu simple">
                         <li><a id="user" href="#">Author: {{user.username}}</a></li>
