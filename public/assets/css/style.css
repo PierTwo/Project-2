@@ -431,7 +431,7 @@ span {
 }
 
 hr {
-    border-color: white;
+    border-color: red;
 }
 
 #profile-card {
@@ -482,8 +482,8 @@ hr {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#thread-body {
-    margin-left: 40px;
+p#thread-body {
+    margin-left: 30px;
 }
 
 #contact-page {
@@ -493,4 +493,10 @@ hr {
 #contact-header {
     font-family: 'Times New Roman', Times, serif;
     color: red;
+}
+
+.footer {
+    background-color: white;
+    padding: 20px;
+
 }
