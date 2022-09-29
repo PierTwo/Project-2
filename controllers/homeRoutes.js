@@ -1,6 +1,6 @@
 const router = require('express').Router();
-// const { User } = require('../models');
-// const withAuth = require('../utils/auth');
+const { User, Thread } = require('../models');
+const withAuth = require('../utils/auth');
 
 router.get('/', async (_req, res) => {
   try {
@@ -75,10 +75,17 @@ router.get('/schedule', async (_req, res) => {
   }
 });
 
-router.get('/profile', async (_req, res) => {
+router.get('/profile', withAuth, async (_req, res) => {
   try {
+    const userData = await User.findByPk(_req.session.user_id, {
+      attributes: { exclude: ['password'] },
+      include: [{ model: Thread }],
+    });
+
+    const user = userData.get({ plain: true });
+
     // Change this to where you app should go
-    res.render('profile');
+    res.render('profile', user);
   } catch (err) {
     res.status(500).json(err);
   }
