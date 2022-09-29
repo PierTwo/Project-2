@@ -8,7 +8,6 @@ router.post('/', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-
       res.status(200).json(userData);
     });
   } catch (err) {
@@ -42,7 +41,6 @@ router.post('/login', async (req, res) => {
       // CHANGE THIS REDIRECT TO WHERE YOU WANT THE USER TO GO
       res.status(200).redirect('/');
     });
-
   } catch (err) {
     res.status(400).json(err);
   }
