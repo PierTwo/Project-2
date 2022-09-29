@@ -1,489 +1,482 @@
 .body {
-    background-color: gold;
-    font-family: 'NFL Chiefs';
+  background-color: gold;
+  font-family: 'NFL Chiefs';
 }
 
 .stadium {
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    width: 100%;
-    /* margin-bottom: 25px; */
-    background-image: url(../img/stadium.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  /* margin-bottom: 25px; */
+  background-image: url(../img/stadium.jpg);
 }
 
 #chief {
-    color: red;
+  color: red;
 }
 
 #Description {
-    background-color: red;
-    height: 400px;
-    margin-left: 100px;
-    margin-top: 100px;
-    color: yellow;
-    text-align: center;
-    font-size: 48px;
-    border-radius: 30px;
+  background-color: red;
+  height: 400px;
+  margin-left: 100px;
+  margin-top: 100px;
+  color: yellow;
+  text-align: center;
+  font-size: 48px;
+  border-radius: 30px;
 }
 
 #Logo {
-    height: 350px;
-    margin-left: 100px;
-    margin-top: 200px;
-    color: yellow;
-    text-align: center;
-    font-size: 48px;
+  height: 350px;
+  margin-left: 100px;
+  margin-top: 200px;
+  color: yellow;
+  text-align: center;
+  font-size: 48px;
 }
 
 #Tweet-Head {
-    background-color: red;
-    color: yellow;
-    height: 75px;
-    margin-top: 50px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: 48px;
-    border-radius: 30px;
+  background-color: red;
+  color: yellow;
+  height: 75px;
+  margin-top: 50px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: 48px;
+  border-radius: 30px;
 }
 
 #Post-Button {
-    background-color: red;
-    color: yellow;
-    height: 200px;
-    margin-top: 25px;
-    margin-left: 100px;
-    text-align: center;
-    font-size: 48px;
-    border-radius: 30px;
+  background-color: red;
+  color: yellow;
+  height: 200px;
+  margin-top: 25px;
+  margin-left: 100px;
+  text-align: center;
+  font-size: 48px;
+  border-radius: 30px;
 }
 
 #Tweet-one {
-    height: 800px;
-    width: 1000px;
-    margin-top: 50px;
-    margin-left: 100px;
-    text-align: left;
-    font-size: 48px;
-    margin-bottom: 25px;
+  height: 800px;
+  width: 1000px;
+  margin-top: 50px;
+  margin-left: 100px;
+  text-align: left;
+  font-size: 48px;
+  margin-bottom: 25px;
 }
 
 .top-bar {
-    color: red;
+  color: red;
 }
 
 img {
-    height: 350px;
+  height: 350px;
 }
 
 #field {
-    padding-top: 100px;
-    padding-left: 150px;
+  padding-top: 100px;
+  padding-left: 150px;
 }
 
 #Tweet-Five {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 #submit {
-    background-color: black;
-
+  background-color: black;
 }
 
 #submit:hover {
-    color: red;
+  color: red;
 }
 
 @font-face {
-    font-family: 'NFL Chiefs';
-    src: url('../fonts/NFLChiefs.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/NFLChiefs.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../fonts/NFLChiefs.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/NFLChiefs.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/NFLChiefs.svg#svgFontName') format('svg');
-    /* Legacy iOS */
+  font-family: 'NFL Chiefs';
+  src: url('../fonts/NFLChiefs.eot');
+  /* IE9 Compat Modes */
+  src: url('../fonts/NFLChiefs.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */ url('../fonts/NFLChiefs.woff') format('woff'),
+    /* Pretty Modern Browsers */ url('../fonts/NFLChiefs.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/NFLChiefs.svg#svgFontName')
+      format('svg');
+  /* Legacy iOS */
 }
 
 #login-header {
-    font-family: 'NFL Chiefs';
-    font-size: 40px;
-    font-weight: bolder;
-    font-stretch: expanded;
-    justify-content: space-around;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px gold, 0 0 30px gold,
-        0 0 40px gold, 0 0 55px gold, 0 0 70px gold;
+  font-family: 'NFL Chiefs';
+  font-size: 40px;
+  font-weight: bolder;
+  font-stretch: expanded;
+  justify-content: space-around;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px gold, 0 0 30px gold,
+    0 0 40px gold, 0 0 55px gold, 0 0 70px gold;
 }
 
 #form-header {
-    font-family: 'NFL Chiefs';
+  font-family: 'NFL Chiefs';
 }
 
 #fill {
-    font-family: 'NFL Chiefs';
+  font-family: 'NFL Chiefs';
 }
 
 #filler {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#email-login {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+#email-login,
+#email-signup {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .login-card {
-    padding-right: 30px;
-    padding-left: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 #login-header-container {
-    background-color: red;
+  background-color: red;
 }
 
 #login-body {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 #inner-nav-bar {
-    background-color: white;
+  background-color: white;
 }
 
 #nav-bar {
-    background-color: white;
+  background-color: white;
 }
 
 #nav-bar-text {
-    color: black;
-    background-color: white;
+  color: black;
+  background-color: white;
 }
 
 #nav-bar-btn {
-    background-color: black;
+  background-color: black;
 }
 
 #legend-pic-one {
-    height: 600px;
-    width: 500px;
-    margin-top: 50px;
-    margin-left: 175px;
-    text-align: right;
-    font-size: 48px;
-    margin-bottom: 25px;
+  height: 600px;
+  width: 500px;
+  margin-top: 50px;
+  margin-left: 175px;
+  text-align: right;
+  font-size: 48px;
+  margin-bottom: 25px;
 }
 
-
 #profile-info {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #profile-img {
-    height: 200px;
-    width: 200px;
+  height: 200px;
+  width: 200px;
 }
 
 * {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
 .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
 .mySlides {
-    display: none;
+  display: none;
 }
 
-
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {
-        opacity: .4
-    }
+  from {
+    opacity: 0.4;
+  }
 
-    to {
-        opacity: 1
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .flex-container {
-    padding: 20px;
+  padding: 20px;
 }
 
 .schedule {
-    background-size: cover;
-    background-position: center;
-    margin-left: 30rem;
-    height: 75rem;
-    width: 50rem;
-    margin-top: 4rem;
-    background-image: url("../img/chiefsplay.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-left: 30rem;
+  height: 75rem;
+  width: 50rem;
+  margin-top: 4rem;
+  background-image: url('../img/chiefsplay.jpg');
 }
 
 footer {
-    background-color: black;
+  background-color: black;
 }
 
 #login,
 #logout {
-    /* color: black; */
-    background-color: black;
-    border-color: black;
+  /* color: black; */
+  background-color: black;
+  border-color: black;
 }
 
 #login:hover,
 #logout:hover {
-    color: red;
-
+  color: red;
 }
 
 #logout {
-    padding-left: 4px;
+  padding-left: 4px;
 }
 
 #user {
-    color: red;
+  color: red;
 }
 
 #comments {
-    color: red;
+  color: red;
 }
 
 #stats {
-    color: red;
+  color: red;
 }
 
 #plus {
-
-    margin-top: 10px;
-
+  margin-top: 10px;
 }
 
 /* contact page */
 span {
-    content: icon;
-    padding-top: 10px;
+  content: icon;
+  padding-top: 10px;
 }
 
 .topinfo {
-    font-size: 6rem;
-    color: red;
+  font-size: 6rem;
+  color: red;
 }
 
 #schedule {
-    font-family: 'NFL Chiefs';
-    color: red;
-    margin-bottom: 7rem;
+  font-family: 'NFL Chiefs';
+  color: red;
+  margin-bottom: 7rem;
 }
 
 #drop {
-    color: white;
+  color: white;
 }
 
 #week {
-    color: red;
+  color: red;
 }
 
 #date {
-    color: red;
-    justify-content: center;
+  color: red;
+  justify-content: center;
 }
 
 #opponent {
-
-    color: red;
+  color: red;
 }
 
 #time {
-    color: red;
+  color: red;
 }
 
 #contact {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .section-header {
-    text-align: center;
-    padding: 40px;
-    color: black;
+  text-align: center;
+  padding: 40px;
+  color: black;
 }
 
 .contact-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative;
-    max-width: 840px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
 }
 
 /* Begin Right Contact Page */
 .direct-contact-container {
-    max-width: 400px;
+  max-width: 400px;
 }
 
 /* Location, Phone, Email Section */
 .contact-list {
-    list-style-type: none;
-    margin-left: -30px;
-    padding-right: 20px;
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
 }
 
 .list-item {
-    line-height: 4;
-    color: #aaa;
+  line-height: 4;
+  color: #aaa;
 }
 
 .contact-text {
-    font: 300 18px 'Lato', sans-serif;
-    letter-spacing: 1.9px;
-    color: #bbb;
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
 }
 
 .place {
-    margin-left: 62px;
+  margin-left: 62px;
 }
 
 .phone {
-    margin-left: 56px;
+  margin-left: 56px;
 }
 
 .gmail {
-    margin-left: 53px;
+  margin-left: 53px;
 }
 
 #contact {
-    color: black;
-    font-family: 'NFL Chiefs';
+  color: black;
+  font-family: 'NFL Chiefs';
 }
 
 #github {
-    color: red;
+  color: red;
 }
 
 /* Social Media Icons */
 .social-media-list {
-    position: relative;
-    font-size: 22px;
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .social-media-list li a {
-    color: red;
+  color: red;
 }
 
 .social-media-list li {
-    position: relative;
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 10px 3px;
-    line-height: 60px;
-    border-radius: 50%;
-    color: snow;
-    background-color: black;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: snow;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
 .social-media-list li:hover {
-    background-color: red;
+  background-color: red;
 }
 
 .social-media-list li:hover:after {
-    opacity: 1;
-    transform: scale(1.10);
-    transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+  opacity: 1;
+  transform: scale(1.1);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
 }
 
 .copyright {
-    font: 200 14px 'Oswald', sans-serif;
-    color: red;
-    letter-spacing: 1px;
-    text-align: center;
+  font: 200 14px 'Oswald', sans-serif;
+  color: red;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 hr {
-    border-color: red;
+  border-color: red;
 }
 
 #profile-card {
-    background-color: red;
+  background-color: red;
 }
 
 #create-post-card {
-    background-color: white;
+  background-color: white;
 }
 
 .user-posts {
-    height: 400px;
-    width: 1000px;
-    border: 3px solid #ccc;
-    font: 16px/26px Georgia, Garamond, Serif;
-    overflow: auto;
-    pad: 20px;
+  height: 400px;
+  width: 1000px;
+  border: 3px solid #ccc;
+  font: 16px/26px Georgia, Garamond, Serif;
+  overflow: auto;
+  pad: 20px;
 }
 
 #create-button {
-    background-color: black;
+  background-color: black;
 }
 
 .make-post-box {
-    border-style: groove;
-    border-width: 5px;
+  border-style: groove;
+  border-width: 5px;
 }
 
 .post-form-title {
-    font-family: 'NFL Chiefs';
+  font-family: 'NFL Chiefs';
 }
 
 .post-header {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .blog-post {
-    border-color: red;
-    border-style: groove;
-    border-width: 5px;
-    padding: 15px;
+  border-color: red;
+  border-style: groove;
+  border-width: 5px;
+  padding: 15px;
 }
 
 #thread-content {
-    padding: 20px;
+  padding: 20px;
 }
 
 .callout {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p#thread-body {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 #contact-page {
-    font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #contact-header {
-    font-family: 'Times New Roman', Times, serif;
-    color: red;
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
 }
 
 .footer {
-    background-color: white;
-    padding: 20px;
-
+  background-color: white;
+  padding: 20px;
 }
