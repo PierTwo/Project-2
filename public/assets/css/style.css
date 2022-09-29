@@ -485,3 +485,12 @@ hr {
 #thread-body {
     margin-left: 40px;
 }
+
+#contact-page {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contact-header {
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
