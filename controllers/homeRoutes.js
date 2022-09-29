@@ -69,7 +69,7 @@ router.get('/random', async (_req, res) => {
 router.get('/schedule', async (_req, res) => {
   try {
     // Change this to where you app should go
-    res.render('schedule');
+    res.render('schedule', { logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -85,7 +85,7 @@ router.get('/profile', withAuth, async (_req, res) => {
     const user = userData.get({ plain: true });
 
     // Change this to where you app should go
-    res.render('profile', user);
+    res.render('profile', {user, logged_in: _req.session.logged_in});
   } catch (err) {
     res.status(500).json(err);
   }
@@ -94,7 +94,7 @@ router.get('/profile', withAuth, async (_req, res) => {
 router.get('/contact', async (_req, res) => {
   try {
     // Change this to where you app should go
-    res.render('contact');
+    res.render('contact', { logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
