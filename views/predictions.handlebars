@@ -57,6 +57,20 @@
                     <li><a id="user" href="#">Author: {{user.username}}</a></li>
                     <li><a id="comments" href="#">Comments:</a></li>
                 </ul>
+{{#each threads as |thread|}}
+        <div class="row" id="thread-content">
+            <div class="blog-post">
+                <h3 id="fill">{{thread.title}} <small>{{date}}</small></h3>
+                <p id="thread-body">{{thread.body}}</p>
+                <div class="callout">
+                    <ul class="menu simple">
+                        <li><a id="user" href="#">Author: {{user.username}}</a></li>
+                        <li><a id="comments" href="#">Comments:</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+{{/each}}
 
         <div class="callout">
         <div class="tabs-content" data-tabs-content="example-tabs">
