@@ -17,10 +17,12 @@ Thread.init(
     },
     body: {
       type: DataTypes.STRING,
+      allowNull: false,
     },
     likes: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      defaultValue: 0,
     },
     category_id: {
       type: DataTypes.INTEGER,
