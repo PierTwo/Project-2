@@ -35,3 +35,17 @@
             </tr>
         </tbody>
     </table>
+
+     {{#each post}}
+        <div class="row" id="content">
+            <div class="blog-post">
+                <h3 id="fill">{{title}} <small>{{date}}</small></h3>
+                <p>{{body}}</p>
+                <div class="callout">
+                    <ul class="menu simple">
+                        <li><a id="user" href="#">Author: {{username}}</a></li>
+                        <li><a id="comments" href="#">Comments: {{comments number}}</a></li>
+                    </ul>
+                </div>
+            </div>
+            {{/each}}

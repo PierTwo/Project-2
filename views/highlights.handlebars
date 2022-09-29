@@ -27,69 +27,16 @@
         </div>
     </div>
 
-
-
-
-    <div class="column row">
-        <hr>
-        <ul class="tabs" data-tabs id="example-tabs">
-            <li class="tabs">
-                <h4 id="fill">Comments</h4>
-            </li>
-        </ul>
-        <div class="tabs-content" data-tabs-content="example-tabs">
-            <div class="tabs-panel is-active" id="panel1">
-                <div class="media-object stack-for-small">
-                    <div class="media-object-section">
-                    </div>
-                    <div class="media-object-section">
-                        <!-- insert user profile link -->
-                        <h4 id="fill"><a id="user" href="#">Mike Mikers</a></h4>
-                        <p>I'm going to improvise. Listen, there's something you should know about me... about
-                            inception. An idea is
-                            like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can
-                            grow to define
-                            or destroy you.</p>
-                    </div>
+ {{#each post}}
+        <div class="row" id="content">
+            <div class="blog-post">
+                <h3 id="fill">{{title}} <small>{{date}}</small></h3>
+                <p>{{body}}</p>
+                <div class="callout">
+                    <ul class="menu simple">
+                        <li><a id="user" href="#">Author: {{username}}</a></li>
+                        <li><a id="comments" href="#">Comments: {{comments number}}</a></li>
+                    </ul>
                 </div>
             </div>
-            <textarea placeholder="my comments"></textarea>
-            <button id="submit" class="button">Submit</button>
-        </div>
-
-        <div class="tabs-panel" id="panel2">
-            <div class="row medium-up-3 large-up-5">
-                <div class="column">
-                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla,
-                        orci ac
-                        euismod
-                        semper, magna diam.</p>
-                </div>
-                <div class="column">
-                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla,
-                        orci ac
-                        euismod
-                        semper, magna diam.</p>
-                </div>
-                <div class="column">
-                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla,
-                        orci ac
-                        euismod
-                        semper, magna diam.</p>
-                </div>
-                <div class="column">
-                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla,
-                        orci ac
-                        euismod
-                        semper, magna diam.</p>
-                </div>
-                <div class="column">
-                    <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla,
-                        orci ac
-                        euismod
-                        semper, magna diam.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+            {{/each}}
