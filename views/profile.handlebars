@@ -1,8 +1,8 @@
 <div class="gird-x grid-padding-x">
   <div class="cell small-12 flex-container flex-dir-colomn large-flex-dir-row">
-   <div class="callout primary flex-child-auto">
+   <div class="callout primary flex-child-auto" id="profile-card">
       <h1>{{username}}</h1>
-      <img src="../public/assets/img/profile_img_folder.png" alt="profile_img" id="profile-img">
+      <img src="/assets/img/profile_img_folder.png" alt="profile_img" id="profile-img">
       <p id="profile-info">Email: {{email}} </p>
       <p id="profile-info"># of posts: </p>
       <p id="profile-info"># of likes: </p>
@@ -12,7 +12,7 @@
       <a href="#"><i class="fa fa-facebook"></i></a>
     </div>
 
-    <div class="callout primary flex-child-auto">
+    <div class="callout primary flex-child-auto" id="create-post-card">
       <div class="post-form-header">
         <h2 class="post-form-title">
           Make a Post!
@@ -42,22 +42,16 @@
           </label>
         </div>
         <div class="form-group">
-          <p><input type="submit" class="button expanded" id="submit-button" value="Create Post!"></input></p>
+          <p><input type="submit" class="button expanded" id="create-button" value="Create Post!"></input></p>
         </div>
       </form>
-    </div>
+    <div>
+      <h1 class="user-posts-header">{{username}} Posts</h1>
+      <div class="flex-container">
+      <div class="user-posts">
+          As you can see, once there's enough text in this box, the box will grow scroll bars... that's why we call it a scroll box! You could also place an image into the scroll box.
+      </div>
 
-    <div class="cell small-12 align-self-bottom" id="users-posts-box" style="height:120px;width:120px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
-      Existing user posts in here 
-      Existing user posts in here
-      Existing user posts in here
-      Existing user posts in here
-      Existing user posts in here
-      Existing user posts in here
-      Existing user posts in here
-      Existing user posts in here
-      Existing user posts in here
-    </div>
 
   </div>
 </div>
