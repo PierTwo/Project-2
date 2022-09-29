@@ -10,70 +10,21 @@
             <h2 id="fill">Posts</h2>
         </div>
 
+       {{#each post}}
         <div class="row" id="content">
             <div class="blog-post">
-                <h3 id="fill">post title <small>3/6/2015</small></h3>
-                <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo
-                    dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu
-                    ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In
-                    pellentesque
-                    faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+                <h3 id="fill">{{title}} <small>{{date}}</small></h3>
+                <p>{{body}}</p>
                 <div class="callout">
                     <ul class="menu simple">
-                        <li><a id="user" href="#">Author: Mike Mikers</a></li>
-                        <li><a id="comments" href="#">Comments: 3</a></li>
+                        <li><a id="user" href="#">Author: {{username}}</a></li>
+                        <li><a id="comments" href="#">Comments: {{comments number}}</a></li>
                     </ul>
                 </div>
             </div>
+            {{/each}}
 
-            <div class="blog-post">
-                <h3 id="fill">post title <small>3/6/2015</small></h3>
-                <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo
-                    dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu
-                    ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In
-                    pellentesque
-                    faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-                <div class="callout">
-                    <ul class="menu simple">
-                        <li><a id="user" href="#">Author: Mike Mikers</a></li>
-                        <li><a id="comments" href="#">Comments: 3</a></li>
-                    </ul>
-                </div>
-
-
-                <div class="blog-post">
-                    <h3 id="fill">post title <small>3/6/2015</small></h3>
-                    <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo
-                        dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu
-                        ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In
-                        pellentesque
-                        faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-                    <div class="callout">
-                        <ul class="menu simple">
-                            <li><a id="user" href="#">Author: Mike Mikers</a></li>
-                            <li><a id="comments" href="#">Comments: 3</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="blog-post">
-                    <h3 id="fill">post title <small>3/6/2015</small></h3>
-                    <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo
-                        dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu
-                        ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In
-                        pellentesque
-                        faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-                    <div class="callout">
-                        <ul class="menu simple">
-                            <li><a id="user" href="#">Author: Mike Mikers</a></li>
-                            <li><a id="comments" href="#">Comments: 3</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="tabs-content" data-tabs-content="example-tabs">
+        {{!-- <div class="tabs-content" data-tabs-content="example-tabs">
             <div class="tabs-panel is-active" id="panel1">
                 <div class="media-object stack-for-small">
                     <div class="media-object-section">
@@ -93,4 +44,4 @@
             <textarea placeholder="my comments"></textarea>
             <button id="submit" class="button">Submit</button>
         </div>
-    </div>
+    </div> --}}

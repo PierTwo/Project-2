@@ -1,115 +1,55 @@
-{{!-- <div id="jummbotron" class="callout large">
+<div id="jummbotron" class="callout large">
     <div class="row column text-center">
         <h1 id="fill">PREDICTIONS</h1>
     </div>
-</div> --}}
+</div>
 
-<table class="hover">
-    <thead>
-        <tr>
-            <th width="200"></th>
-            <th class="topinfo">SEASON ODDS FOR THE KANSAS CITY CHIEFS</th>
-            <th width="150"></th>
-            <th width="150"></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td id="stats">NEXT GAME</td>
-            <td>The Kansas City Chiefs are 2.0 point favorites at the Tampa Bay Buccaneers on October 3, 2022. The
-                Over-Under Total is 45.5 Points.</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td id="stats">AFC</td>
-            <td>The Kansas City Chiefs' odds to win the 2023 AFC Championship are <span id="plus"
-                    class="material-symbols-outlined">
-                    add
-                </span>350.</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td id="stats">SUPERBOWL</td>
-            <td>The Kansas City Chiefs' odds to win the 2023 Super Bowl are <span id="plus"
-                    class="material-symbols-outlined">
-                    add
-                </span>750.</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
+    <table class="hover">
+        <thead>
+            <tr>
+                <th width="200"></th>
+                <th id="stats">SEASON ODDS FOR THE KANSAS CITY CHIEFS</th>
+                <th width="150"></th>
+                <th width="150"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="stats">NEXT GAME</td>
+                <td>The Kansas City Chiefs are 2.0 point favorites at the Tampa Bay Buccaneers on October 3, 2022. The
+                    Over-Under Total is 45.5 Points.</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="stats">AFC</td>
+                <td>The Kansas City Chiefs' odds to win the 2023 AFC Championship are +350.</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="stats">SUPERBOWL</td>
+                <td>The Kansas City Chiefs' odds to win the 2023 Super Bowl are +750.</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 
-<div class="callout small ">
-    <div class="row column">
-        <h2 id="fill">Posts</h2>
-    </div>
-
-    <div class="row" id="content">
-        <div class="blog-post">
-            <h3 id="fill">post title <small>3/6/2015</small></h3>
-            <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo
-                dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu
-                ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In
-                pellentesque
-                faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-            <div class="callout">
-                <ul class="menu simple">
-                    <li><a id="user" href="#">Author: Mike Mikers</a></li>
-                    <li><a id="comments" href="#">Comments: 3</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="blog-post">
-            <h3 id="fill">post title <small>3/6/2015</small></h3>
-            <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo
-                dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu
-                ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In
-                pellentesque
-                faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-            <div class="callout">
-                <ul class="menu simple">
-                    <li><a id="user" href="#">Author: Mike Mikers</a></li>
-                    <li><a id="comments" href="#">Comments: 3</a></li>
-                </ul>
-            </div>
-
-
+     {{#each post}}
+        <div class="row" id="content">
             <div class="blog-post">
-                <h3 id="fill">post title <small>3/6/2015</small></h3>
-                <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo
-                    dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu
-                    ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In
-                    pellentesque
-                    faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+                <h3 id="fill">{{title}} <small>{{date}}</small></h3>
+                <p>{{body}}</p>
                 <div class="callout">
                     <ul class="menu simple">
-                        <li><a id="user" href="#">Author: Mike Mikers</a></li>
-                        <li><a id="comments" href="#">Comments: 3</a></li>
+                        <li><a id="user" href="#">Author: {{username}}</a></li>
+                        <li><a id="comments" href="#">Comments: {{comments number}}</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="blog-post">
-                <h3 id="fill">post title <small>3/6/2015</small></h3>
-                <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo
-                    dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu
-                    ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In
-                    pellentesque
-                    faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-                <div class="callout">
-                    <ul class="menu simple">
-                        <li><a id="user" href="#">Author: Mike Mikers</a></li>
-                        <li><a id="comments" href="#">Comments: 3</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
+            {{/each}}
+            
     <div class="tabs-content" data-tabs-content="example-tabs">
         <div class="tabs-panel is-active" id="panel1">
             <div class="media-object stack-for-small">
