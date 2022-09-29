@@ -399,20 +399,6 @@ span {
     transition: all .2s ease-in-out;
 }
 
-.social-media-list li:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    opacity: 0;
-    box-shadow: 0 0 0 1px red;
-    transition: all .2s ease-in-out;
-}
-
 .social-media-list li:hover {
     background-color: red;
 }
@@ -467,6 +453,7 @@ hr {
 .post-header {
     text-decoration: underline;
 }
+
 .blog-post {
     border-color: red;
     border-style: groove;
