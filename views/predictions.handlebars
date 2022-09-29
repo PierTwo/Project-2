@@ -57,42 +57,6 @@
                     <li><a id="user" href="#">Author: {{user.username}}</a></li>
                     <li><a id="comments" href="#">Comments:</a></li>
                 </ul>
-{{#each threads as |thread|}}
-        <div class="row" id="thread-content">
-            <div class="blog-post">
-                <h3 id="fill">{{thread.title}} <small>{{date}}</small></h3>
-                <p class="thread-body">{{thread.body}}</p>
-                <div class="callout">
-                    <ul class="menu simple">
-                        <li><a id="user" href="#">Author: {{user.username}}</a></li>
-                        <li><a id="comments" href="#">Comments:</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
-{{/each}}
-
-        <div class="callout">
-        <div class="tabs-content" data-tabs-content="example-tabs">
-        <div class="tabs-panel is-active" id="panel1">
-            <div class="media-object stack-for-small">
-                <div class="media-object-section">
-                </div>
-                <div class="media-object-section">
-                    <!-- insert user profile link -->
-                    <h4 id="fill"><a id="user" href="#">Mike Mikers</a></h4>
-                    <p>I'm going to improvise. Listen, there's something you should know about me... about
-                        inception. An idea is
-                        like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It
-                        can
-                        grow to define
-                        or destroy you.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<textarea placeholder="my comments"></textarea>
-  <button id="submit" class="button">Submit</button>
-{{/each}}
-
+    {{/each}}
