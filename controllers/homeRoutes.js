@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Thread } = require('../models');
+const { User, Thread, Category, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (_req, res) => {
@@ -23,8 +23,23 @@ router.get('/login', (req, res) => {
 
 router.get('/predictions', async (_req, res) => {
   try {
+    const threadData = await Thread.findAll({
+      where: { category_id: 4 },
+      attributes: ['title', 'body', 'likes'],
+      include: [
+        { model: User, attributes: ['username'] },
+        { model: Category, attributes: ['category'] },
+        {
+          model: Comment,
+          attributes: ['comment'],
+          include: [{ model: User, attributes: ['username'] }],
+        },
+      ],
+    });
+    const threads = threadData.map((thread) => thread.get({ plain: true }));
+
+    res.render('predictions', { threads, logged_in: _req.session.logged_in });
     // Change this to where you app should go
-    res.render('predictions', { logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -85,7 +100,7 @@ router.get('/profile', withAuth, async (_req, res) => {
     const user = userData.get({ plain: true });
 
     // Change this to where you app should go
-    res.render('profile', {user, logged_in: _req.session.logged_in});
+    res.render('profile', { user, logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
