@@ -84,4 +84,13 @@ router.get('/profile', async (_req, res) => {
   }
 });
 
+router.get('/contact', async (_req, res) => {
+  try {
+    // Change this to where you app should go
+    res.render('contact');
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;
