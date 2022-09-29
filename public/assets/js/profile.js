@@ -4,13 +4,14 @@ const newThreadHandler = async (event) => {
   const title = document.getElementById('title-box');
   const body = document.getElementById('post-content');
   const category_id = document.getElementById('select-category');
+
   if (title && body && category_id) {
     const response = await fetch('/api/threads', {
       method: 'POST',
       body: JSON.stringify({
         title: title.value,
         body: body.value,
-        category_id: category_id.selectedIndex,
+        category_id: 4,
       }),
       headers: {
         'Content-Type': 'application/json',
@@ -27,5 +28,5 @@ const newThreadHandler = async (event) => {
 };
 
 document
-  .querySelector('#submit-button')
+  .querySelector('#create-button')
   .addEventListener('click', newThreadHandler);
