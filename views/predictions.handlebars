@@ -24,13 +24,18 @@
         <tr>
             <td id='stats'>AFC</td>
             <td>The Kansas City Chiefs' odds to win the 2023 AFC Championship are
-                +350.</td>
+                <span class="material-symbols-outlined">
+                    add
+                </span>350.
+            </td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td id='stats'>SUPERBOWL</td>
-            <td>The Kansas City Chiefs' odds to win the 2023 Super Bowl are +750.</td>
+            <td>The Kansas City Chiefs' odds to win the 2023 Super Bowl are <span class="material-symbols-outlined">
+                    add
+                </span>750.</td>
             <td></td>
             <td></td>
         </tr>
@@ -52,6 +57,7 @@
                     <li><a id="user" href="#">Author: {{user.username}}</a></li>
                     <li><a id="comments" href="#">Comments:</a></li>
                 </ul>
+
         <div class="callout">
         <div class="tabs-content" data-tabs-content="example-tabs">
         <div class="tabs-panel is-active" id="panel1">
@@ -68,14 +74,11 @@
                         grow to define
                         or destroy you.</p>
                 </div>
-            </div>
-        </div>
-        <textarea placeholder="my comments"></textarea>
-        <button id="submit" class="button">Submit</button>
-    </div>
-</div> 
-        </div>
+                <textarea placeholder="my comments"></textarea>
+                <button id="submit" class="button">Submit</button>
             </div>
         </div>
     </div>
-    {{/each}}
+</div>
+{{/each}}
+
