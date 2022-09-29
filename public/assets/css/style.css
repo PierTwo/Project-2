@@ -362,17 +362,14 @@ span {
     margin-left: 53px;
 }
 
-.contact-text a {
-    color: #bbb;
-    text-decoration: none;
-    transition-duration: 0.2s;
+#contact {
+    color: black;
+    font-family: 'NFL Chiefs';
 }
 
-.contact-text a:hover {
-    color: #fff;
-    text-decoration: none;
+#github {
+    color: red;
 }
-
 
 /* Social Media Icons */
 .social-media-list {
@@ -396,8 +393,8 @@ span {
     margin: 10px 3px;
     line-height: 60px;
     border-radius: 50%;
-    color: #fff;
-    background-color: red;
+    color: snow;
+    background-color: black;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
@@ -417,7 +414,7 @@ span {
 }
 
 .social-media-list li:hover {
-    background-color: #fff;
+    background-color: red;
 }
 
 .social-media-list li:hover:after {
@@ -446,11 +443,11 @@ hr {
 }
 
 .user-posts {
-    height: 400px; 
-    width:1000px;
+    height: 400px;
+    width: 1000px;
     border: 3px solid #ccc;
-    font:16px/26px Georgia, Garamond, Serif;
-    overflow:auto; 
+    font: 16px/26px Georgia, Garamond, Serif;
+    overflow: auto;
     pad: 20px;
 }
 
