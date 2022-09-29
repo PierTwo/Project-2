@@ -463,3 +463,7 @@ hr {
 .post-form-title {
     font-family: 'NFL Chiefs';
 }
+
+.post-header {
+    text-decoration: underline;
+}

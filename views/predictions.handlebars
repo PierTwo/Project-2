@@ -39,29 +39,21 @@
 
 <div class="callout small ">
     <div class="row column">
-        <h2 id="fill">Posts</h2>
+        <h2 id="fill" class="post-header">Posts</h2>
     </div>
+    <br>
 
     {{#each threads as |thread|}}
     <div class="row" id="content">
         <div class="blog-post">
             <h3 id="fill">{{thread.title}} <small>{{date}}</small></h3>
             <p>{{thread.body}}</p>
-            <div class="callout">
                 <ul class="menu simple">
                     <li><a id="user" href="#">Author: {{user.username}}</a></li>
                     <li><a id="comments" href="#">Comments:</a></li>
                 </ul>
-           
-                 <textarea placeholder="my comments"></textarea>
-            <button id="submit" class="button">Submit</button>
-        </div>
-            </div>
-        </div>
-    </div>
-    {{/each}}
-
-    {{! <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="callout">
+        <div class="tabs-content" data-tabs-content="example-tabs">
         <div class="tabs-panel is-active" id="panel1">
             <div class="media-object stack-for-small">
                 <div class="media-object-section">
@@ -81,4 +73,9 @@
         <textarea placeholder="my comments"></textarea>
         <button id="submit" class="button">Submit</button>
     </div>
-</div> }}
+</div> 
+        </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
