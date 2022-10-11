@@ -100,7 +100,7 @@ router.get('/profile', withAuth, async (_req, res) => {
     const user = userData.get({ plain: true });
 
     // Change this to where you app should go
-    res.render('profile', { user, logged_in: _req.session.logged_in });
+    res.render('profile', { ...user, logged_in: _req.session.logged_in });
   } catch (err) {
     res.status(500).json(err);
   }
